@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 
 
-// 🌠 Reusable Animation Presets
+
 const fadeUp = (delay = 0) => ({
   hidden: { opacity: 0, y: 40 },
   show: {
@@ -48,7 +48,7 @@ const floatAnim = {
 };
 
 
-// 🖼️ 이미지 슬롯 (부드러운 페이드인 + 플로팅)
+
 const ImgSlot = ({ src, alt }) => (
   <motion.div
     className="relative w-full h-100 rounded-2xl overflow-hidden flex items-center justify-center bg-muted"
@@ -75,7 +75,7 @@ const ImgSlot = ({ src, alt }) => (
 );
 
 
-// 💡 Feature Card with shimmer + hover animation
+
 const FeatureCard = ({ icon: Icon, title, desc, img, alt, delay = 0 }) => (
   <motion.div
     variants={fadeUp(delay)}
@@ -116,7 +116,7 @@ const FeatureCard = ({ icon: Icon, title, desc, img, alt, delay = 0 }) => (
 );
 
 
-// 🌌 메인 컴포넌트
+
 export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-pink-50 text-foreground overflow-hidden">
@@ -172,7 +172,7 @@ export default function App() {
       </header>
 
 
-      {/* 🚀 핵심 기능 */}
+
       <section className="mx-auto max-w-6xl px-4 py-16" id="features">
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-8 text-center text-sky-700"
@@ -233,7 +233,6 @@ export default function App() {
       </section>
 
 
-      {/* 🎭 Showcase Section */}
       <section className="mx-auto max-w-6xl px-4 py-20" id="showcase">
         <motion.h2
           className="text-3xl font-bold mb-6 text-center text-sky-700"
@@ -311,7 +310,7 @@ export default function App() {
       </section>
 
 
-      {/* ⚙️ Tech Section */}
+
       <section className="mx-auto max-w-6xl px-4 pb-20" id="tech">
         <motion.h2
           className="text-3xl font-bold mb-8 text-center text-sky-700"
