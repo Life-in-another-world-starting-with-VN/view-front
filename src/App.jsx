@@ -3,6 +3,12 @@ import "./index.css";
 import start from "./assets/start.png";
 import make from "./assets/make.png";
 import face from "./assets/face.png";
+import story from "./assets/story.png";
+import place from "./assets/place.png";
+import ship from "./assets/ship.png";
+import remember from "./assets/remember.png";
+import think from "./assets/think.png";
+import pick from "./assets/pick.png";
 import { motion } from "framer-motion";
 import {
   Card,
@@ -191,6 +197,7 @@ export default function App() {
             alt="실시간 스토리"
             desc="플레이어 대화/행동/선호를 반영해 즉석에서 스토리를 생성하고 분기합니다."
             delay={0.1}
+            img={story}
           />
           <FeatureCard
             icon={Camera}
@@ -214,6 +221,7 @@ export default function App() {
             alt="장소 추천"
             desc="선호 데이터를 학습해 매 회차 최적의 데이트 코스를 구성합니다."
             delay={0.4}
+            img={place}
           />
           <FeatureCard
             icon={Heart}
@@ -221,6 +229,7 @@ export default function App() {
             alt="친밀도"
             desc="행동/대화 감정에 따른 실시간 호감도 및 이벤트 해금."
             delay={0.5}
+            img={ship}
           />
           <FeatureCard
             icon={Shield}
@@ -228,6 +237,7 @@ export default function App() {
             alt="개인화"
             desc="개인정보 동의 기반 장기 기억으로 더 현실적인 대화와 지속성 제공."
             delay={0.6}
+            img={remember}
           />
         </div>
       </section>
@@ -277,7 +287,7 @@ export default function App() {
                     <li>개인 취향 기반 시나리오 시드</li>
                   </ul>
                 </div>
-                <ImgSlot alt="동적 스토리 갤러리" />
+                <ImgSlot alt="동적 스토리 갤러리" src={pick} />
               </motion.div>
             </TabsContent>
 
@@ -302,7 +312,7 @@ export default function App() {
                     <li>방해 요소(잡음) 대응</li>
                   </ul>
                 </div>
-                <ImgSlot alt="보이스/감정 데모" />
+                <ImgSlot alt="보이스/감정 데모"  src={think} />
               </motion.div>
             </TabsContent>
           </motion.div>
@@ -335,10 +345,10 @@ export default function App() {
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground space-y-2">
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>LLM 기반 실시간 스토리 생성 엔진</li>
-                  <li>ASR/TTS 파이프라인, VAD/노이즈 억제</li>
-                  <li>표정 인식 모델(WebCam), 온디바이스 추론</li>
-                  <li>캘린더/날씨 API 연동</li>
+                  <li>React</li>
+                  <li>FastApi</li>
+                  <li>LLM 기반 실시간 스토리 생성 엔진(Gemini)</li>
+                  <li>표정 인식 모델(WebCam)</li>
                   <li>개인화 메모리 계층</li>
                 </ul>
               </CardContent>
